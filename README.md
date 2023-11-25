@@ -17,7 +17,10 @@ python3 -m venv ~/.virtualenvs/ydownload
 source ~/.virtualenvs/ydownload/bin/activate
 pip install -r requirements.txt
 ```
-
+## To load file just run
+```
+python app.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
 ## Add this alias to your ~/.zshrc or ~/.bashrc or similar...
 ```
 alias yd='~/.virtualenvs/ydownlad/bin/python3 <PATH TO FILE>/app.py'
