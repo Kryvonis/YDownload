@@ -23,5 +23,5 @@ python app.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
 ## Add this alias to your ~/.zshrc or ~/.bashrc or similar...
 ```
-alias yd='~/.virtualenvs/ydownlad/bin/python3 <PATH TO FILE>/app.py'
+alias yd='~/.virtualenvs/ydownload/bin/python3 <PATH TO FILE>/app.py'
 ```
