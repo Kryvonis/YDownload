@@ -7,8 +7,10 @@ import yt_dlp
 def download(link: str):
     opts = {
         'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
-        'outtmpl': '%(title)s.%(ext)s',
+        'outtmpl': '%(channel)s/%(title)s.%(ext)s',  # one folder per channel
         'ignoreerrors': True,  # keep going if one paid/blocked video fails
+        'sleep_interval': 5,   # ponytail: fixed 5-30s jitter dodges YT bot-flagging on bulk pulls
+        'max_sleep_interval': 30,
     }
     import os
     if os.environ.get('COOKIES'):
